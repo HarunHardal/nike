@@ -15,7 +15,7 @@ function CartItem({ price, productId, quantity }) {
     let res;
     if (id) {
       res = await axios
-        .get(`https://asdadsadasdf.herokuapp.com/product/getProduct/${id}`)
+        .get(`https://leaveit-l0tz.onrender.com/product/getProduct/${id}`)
         .catch((err) => console.log(err));
     }
 
@@ -29,7 +29,7 @@ function CartItem({ price, productId, quantity }) {
   const deleteRequest = async () => {
     const res = await axios
       .delete(
-        `https://asdadsadasdf.herokuapp.com/cartDetail/cart/${localStorage.getItem(
+        `https://leaveit-l0tz.onrender.com/cartDetail/cart/${localStorage.getItem(
           "userId"
         )}/${productId}`
       )
