@@ -53,7 +53,7 @@ function Auth({ isLoggedIn }) {
     let data;
     if (!isSingup) {
       const res = await axios
-        .post(`https://asdadsadasdf.herokuapp.com/user/singup`, {
+        .post(`https://leaveit-l0tz.onrender.com/user/singup`, {
           email: newUser.email,
           password: newUser.password,
           firstName: newUser.firstName,
@@ -65,7 +65,7 @@ function Auth({ isLoggedIn }) {
       data = await res.data;
     } else {
       const res = await axios
-        .post(`https://asdadsadasdf.herokuapp.com/user/login`, {
+        .post(`https://leaveit-l0tz.onrender.com/user/login`, {
           email: oldUser.email,
           password: oldUser.password,
         })
