@@ -8,7 +8,7 @@ const Favorites = () => {
 
   const getRequest = async () => {
     const res = await axios(
-      `https://asdadsadasdf.herokuapp.com/user/getuserbyid/${localStorage.getItem("userId")}`
+      `https://leaveit-l0tz.onrender.com/user/getuserbyid/${localStorage.getItem("userId")}`
     );
     const data = await res.data;
     return data;
