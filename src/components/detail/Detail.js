@@ -16,7 +16,7 @@ const Detail = () => {
 
   const getRequest = async () => {
     const res = await axios
-      .get(`https://asdadsadasdf.herokuapp.com/product/${id}/${name}`)
+      .get(`https://leaveit-l0tz.onrender.com/product/${id}/${name}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
@@ -49,7 +49,7 @@ const Detail = () => {
 
     await axios
       .post(
-        `https://asdadsadasdf.herokuapp.com/cartdetail/cart/${localStorage.getItem(
+        `https://leaveit-l0tz.onrender.com/cartdetail/cart/${localStorage.getItem(
           "userId"
         )}`,
         {
@@ -70,7 +70,7 @@ const Detail = () => {
 
     await axios
       .put(
-        `https://asdadsadasdf.herokuapp.com/user/add-fovorites/${localStorage.getItem(
+        `https://leaveit-l0tz.onrender.com/user/add-fovorites/${localStorage.getItem(
           "userId"
         )}`,
         {
