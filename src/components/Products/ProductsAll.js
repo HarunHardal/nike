@@ -17,7 +17,7 @@ const ProductsAll = () => {
     const cGender = gender.charAt(0).toUpperCase() + gender.slice(1);
     setQuery(cGender);
     const res = await axios
-      .get(`https://asdadsadasdf.herokuapp.com/product/allproducts/products/${cGender}`, {})
+      .get(`https://leaveit-l0tz.onrender.com/product/allproducts/products/${cGender}`, {})
       .catch((err) => console.log(err));
     const data = await res.data;
 
@@ -34,14 +34,14 @@ const ProductsAll = () => {
     const cGender = gender.charAt(0).toUpperCase() + gender.slice(1);
     setType(e.currentTarget.textContent);
     axios
-      .get(`https://asdadsadasdf.herokuapp.com/product/allproducts/products/${cGender}`, {
+      .get(`https://leaveit-l0tz.onrender.com/product/allproducts/products/${cGender}`, {
         params: { type: e.currentTarget.textContent },
       })
       .then((res) => setData(res.data.products));
   };
   const getAll = () => {
     axios
-      .get(`https://asdadsadasdf.herokuapp.com/product/allproducts/products/${query}`)
+      .get(`https://leaveit-l0tz.onrender.com/product/allproducts/products/${query}`)
       .then((res) => setData(res.data.products));
   };
 
