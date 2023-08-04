@@ -59,7 +59,7 @@ function Cart() {
   const fetchCart = async () => {
     const res = await axios
       .get(
-        `https://asdadsadasdf.herokuapp.com/cartdetail/cart/${localStorage.getItem(
+        `https://leaveit-l0tz.onrender.com/cartdetail/cart/${localStorage.getItem(
           "userId"
         )}`
       )
@@ -71,7 +71,7 @@ function Cart() {
   const getUser = async () => {
     const res = await axios
       .get(
-        `https://asdadsadasdf.herokuapp.com/user/getuserbyid/${localStorage.getItem(
+        `https://leaveit-l0tz.onrender.com/user/getuserbyid/${localStorage.getItem(
           "userId"
         )}`
       )
