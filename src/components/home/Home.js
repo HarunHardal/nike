@@ -21,7 +21,7 @@ const Home = () => {
 
   const getRequest = async () => {
     const res = await axios
-      .get("https://asdadsadasdf.herokuapp.com/product/allproducts")
+      .get("https://leaveit-l0tz.onrender.com/product/allproducts")
       .catch((err) => console.log(err));
 
     const data = await res.data;
@@ -36,7 +36,7 @@ const Home = () => {
 
   const getRequest2 = async () => {
     const res = await axios
-      .get("https://shoeshopnike.herokuapp.com/product/allproducts")
+      .get("https://leaveit-l0tz.onrender.com/product/allproducts")
       .catch((err) => console.log(err));
 
     const data = await res.data;
